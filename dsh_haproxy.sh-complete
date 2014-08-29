@@ -1,0 +1,14 @@
+_UseHaproxyDsh.sh ()
+{
+  local cur
+  COMPREPLY=()
+  cur=${COMP_WORDS[COMP_CWORD]}
+  case "$cur" in
+    "")
+      COMPREPLY=( $( compgen -W "`grep '^backend' /etc/haproxy.cfg | awk '{print $2}'` " ) );;
+    *)
+      COMPREPLY=( $( compgen -W "`grep '^backend' /etc/haproxy.cfg | awk '{print $2}' | grep \"^$cur\" ` " ) );;
+  esac
+  return 0
+}
+complete -F _UseHaproxyDsh.sh dsh_haproxy.sh
