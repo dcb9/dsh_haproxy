@@ -3,6 +3,11 @@ dsh_haproxy
 
 通过dsh来批量维护haproxy组下的服务器
 
+####依赖
+* /etc/haproxy.cfg  # haproxy的配置文件必须放到这
+* dsh 批量操作多台服务器的小工具
+* bash shell
+
 ####下载
 * 创建本地源包存放路径 
 `# mkdir -p /usr/local/src 2>/dev/null ; cd /usr/local/src `
