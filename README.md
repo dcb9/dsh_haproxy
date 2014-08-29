@@ -15,13 +15,13 @@ dsh_haproxy
 `# git clone https://github.com/bobchengbin/dsh_haproxy.git`
 * 通过wget下载源码包的方式
 
-`# wget https://codeload.github.com/bobchengbin/dsh_haproxy/tar.gz/v0.1 -O dsh_haproxy-0.1.tar.gz`
+`# wget https://codeload.github.com/bobchengbin/dsh_haproxy/tar.gz/v0.2 -O dsh_haproxy-0.2.tar.gz`
 
-`# tar -zxvf dsh_haproxy-0.1.tar.gz `
+`# tar -zxvf dsh_haproxy-0.2.tar.gz `
 
 ####安装
 ```
-# cd /usr/local/src/dsh_haproxy-0.1
+# cd /usr/local/src/dsh_haproxy-0.2
 # cp dsh_haproxy.sh /usr/local/bin
 # chmod +x /usr/local/bin/dsh_haproxy.sh
 # cp dsh_haproxy.sh-complete /usr/local/bin/
