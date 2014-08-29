@@ -3,7 +3,6 @@ dsh_haproxy
 
 通过dsh来批量维护haproxy组下的服务器
 
-###安装
 ####下载
 * 创建本地源包存放路径 
 `# mkdir -p /usr/local/src 2>/dev/null ; cd /usr/local/src `
@@ -14,3 +13,19 @@ dsh_haproxy
 `# wget https://codeload.github.com/bobchengbin/dsh_haproxy/tar.gz/v0.1 -O dsh_haproxy-0.1.tar.gz`
 
 `# tar -zxvf dsh_haproxy-0.1.tar.gz `
+
+####安装
+```
+# cd /usr/local/src/dsh_haproxy-0.1
+# cp dsh_haproxy.sh /usr/local/bin
+# chmod +x /usr/local/bin/dsh_haproxy.sh
+# cp dsh_haproxy.sh-complete /usr/local/bin/
+# echo "source /usr/local/bin/dsh_haproxy.sh-complete" >> /etc/bash/bashrc
+```
+
+####使用
+haproxy的配置文件放到 /etc/haproxy.cfg
+```
+# dsh_haproxy.sh <tab><tab>   这样就能列出所有haproxy的backend组名
+# dsh_haproxy.sh 组名 [组名 ... ] "操作的命令"
+```
