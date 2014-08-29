@@ -5,8 +5,7 @@ dsh_haproxy
 
 ###安装
 ####下载
-* 创建本地源包存放路径
-
+* 创建本地源包存放路径 
 `# mkdir -p /usr/local/src 2>/dev/null ; cd /usr/local/src `
 * 通过git
 `# git clone https://github.com/bobchengbin/dsh_haproxy.git`
