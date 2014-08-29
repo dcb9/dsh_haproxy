@@ -21,6 +21,7 @@ dsh_haproxy
 # chmod +x /usr/local/bin/dsh_haproxy.sh
 # cp dsh_haproxy.sh-complete /usr/local/bin/
 # echo "source /usr/local/bin/dsh_haproxy.sh-complete" >> /etc/bash/bashrc
+# source /usr/local/bin/dsh_haproxy.sh-complete
 ```
 
 ####使用
