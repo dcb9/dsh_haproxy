@@ -32,7 +32,7 @@ dsh_haproxy
 ####使用
 haproxy的配置文件放到 /etc/haproxy.cfg
 ```
-# dsh_haproxy.sh <tab><tab>   这样就能列出所有haproxy的backend组名
+# dsh_haproxy.sh <tab><tab>   这样就能列出所有haproxy的backend组名  git !
 # dsh_haproxy.sh 组名 [组名 ... ] "操作的命令"
 ```
 fix a bug that 
